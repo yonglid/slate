@@ -39,7 +39,7 @@ includes:
 
 7. Now you can refresh the local run at localhost:4567
 8. Rinse and repeat for other things you want to add to documentation. You can also add directly to index.html.md - but adding in a new markdown file to include makes things a lot more modular and easier to organize/shift information around. 
-You can also play around with the scss files to style the static html site (in layout.erb) set up using the ruby language which resembles a lot of html elements. 
+You can also play around with the .scss files (mainly in screen.scss) to style the elements in the static html site (layout.erb) set up using the ruby language which resembles a lot of html elements. 
 
 9. git commit -am "your message"
 10. git push 
