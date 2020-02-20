@@ -1,20 +1,16 @@
 ## Contributing to Bluebonnet Data - Data Guide documentation 
 1. git clone https://github.com/yonglid/slate.git
 2. 
+Change directory to where you cloned the repo; 
 
 ```shell 
 cd slate 
 ```
 
--- Change directory to where you cloned the repo; 
-also make sure to create your own branch by doing: 
+also make sure to create your own branch for your own changes with the following commands: 
 
 ```shell
 git branch <your branch name>
-```
-then you can do: 
-
-```shell 
 git checkout <your branch name>
 ```
 
