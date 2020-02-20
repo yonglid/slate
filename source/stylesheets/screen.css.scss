@@ -71,11 +71,17 @@ html, body {
     }
   }
 
+  .bluebonnet-logo-format {
+    display: block; 
+    color: white;  
+    text-align: center;
+  }
+
   // This is the logo at the top of the ToC
   .logo {
-    display: block;
-    max-width: 100%;
+    // display: block;
     margin-bottom: $logo-margin;
+    // margin-left: 10px; 
   }
 
   &>.search {
