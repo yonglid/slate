@@ -1,8 +1,23 @@
 ## Contributing to Bluebonnet Data - Data Guide documentation 
 1. git clone https://github.com/yonglid/slate.git
-2. cd slate -- Change directory to where you cloned the repo; 
-also make sure to create your own branch by doing: git branch <your branch name>
-then you can do: git checkout <your branch name>
+2. 
+
+```shell 
+cd slate 
+```
+
+-- Change directory to where you cloned the repo; 
+also make sure to create your own branch by doing: 
+
+```shell
+git branch <your branch name>
+```
+then you can do: 
+
+```shell 
+git checkout <your branch name>
+```
+
 3. Spin up this locally or with vagrant 
 
 ```shell
@@ -19,18 +34,19 @@ vagrant up
 
 6. To include into the official page, go to 'index.html.md' and take the file name part without underscore and .md parts. Add this file name under the 'includes:' section. 
 example: 
-<aside class="notice">
+```shell
 includes:
   - template
-</aside>
+
+```
 
 7. Now you can refresh the local run at localhost:4567
 8. Rinse and repeat for other things you want to add to documentation. You can also add directly to index.html.md - but adding in a new markdown file to include makes things a lot more modular and easier to organize/shift information around. 
 You can also play around with the scss files to style the static html site (in layout.erb) set up using the ruby language which resembles a lot of html elements. 
-9. git add . 
-10. git commit -m "your message"
-11. git push 
-12. Then you can make a pull request on the github website. Once this request is approved and your changes are merged, make sure to delete your branch
+
+9. git commit -am "your message"
+10. git push 
+11. Then you can make a pull request on the github website. Once this request is approved and your changes are merged, make sure to delete your branch
 
 -------------
 <p align="center">
