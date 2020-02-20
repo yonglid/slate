@@ -1,3 +1,38 @@
+## Contributing to Bluebonnet Data - Data Guide documentation 
+1. git clone https://github.com/yonglid/slate.git
+2. cd slate -- Change directory to where you cloned the repo; 
+also make sure to create your own branch by doing: git branch <your branch name>
+then you can do: git checkout <your branch name>
+3. Spin up this locally or with vagrant 
+
+```shell
+# either run this to run locally
+bundle install
+bundle exec middleman server
+
+# OR run this to run with vagrant
+vagrant up
+```
+4. Under the 'includes' folder, copy and paste the _template.md file. Change the 'template' part of '_template' (leave the necessary underscore) to the data topic. 
+
+5. Open this new markdown file and edit the template or feel free to scrap it. There are links below in the readme that point you to markdown syntax pointers. 
+
+6. To include into the official page, go to 'index.html.md' and take the file name part without underscore and .md parts. Add this file name under the 'includes:' section. 
+example: 
+<aside class="notice">
+includes:
+  - template
+</aside>
+
+7. Now you can refresh the local run at localhost:4567
+8. Rinse and repeat for other things you want to add to documentation. You can also add directly to index.html.md - but adding in a new markdown file to include makes things a lot more modular and easier to organize/shift information around. 
+You can also play around with the scss files to style the static html site (in layout.erb) set up using the ruby language which resembles a lot of html elements. 
+9. git add . 
+10. git commit -m "your message"
+11. git push 
+12. Then you can make a pull request on the github website. Once this request is approved and your changes are merged, make sure to delete your branch
+
+-------------
 <p align="center">
   <img src="https://raw.githubusercontent.com/lord/img/master/logo-slate.png" alt="Slate: API Documentation Generator" width="226">
   <br>
@@ -85,31 +120,3 @@ Companies Using Slate
 
 You can view more in [the list on the wiki](https://github.com/slatedocs/slate/wiki/Slate-in-the-Wild).
 
-Questions? Need Help? Found a bug?
---------------------
-
-If you've got questions about setup, deploying, special feature implementation in your fork, or just want to chat with the developer, please feel free to [start a thread in our Spectrum community](https://spectrum.chat/slate)!
-
-Found a bug with upstream Slate? Go ahead and [submit an issue](https://github.com/slatedocs/slate/issues). And, of course, feel free to submit pull requests with bug fixes or changes to the `dev` branch.
-
-Contributors
---------------------
-
-Slate was built by [Robert Lord](https://lord.io) while interning at [TripIt](https://www.tripit.com/).
-
-Thanks to the following people who have submitted major pull requests:
-
-- [@chrissrogers](https://github.com/chrissrogers)
-- [@bootstraponline](https://github.com/bootstraponline)
-- [@realityking](https://github.com/realityking)
-- [@cvkef](https://github.com/cvkef)
-
-Also, thanks to [Sauce Labs](http://saucelabs.com) for sponsoring the development of the responsive styles.
-
-Special Thanks
---------------------
-- [Middleman](https://github.com/middleman/middleman)
-- [jquery.tocify.js](https://github.com/gfranko/jquery.tocify.js)
-- [middleman-syntax](https://github.com/middleman/middleman-syntax)
-- [middleman-gh-pages](https://github.com/edgecase/middleman-gh-pages)
-- [Font Awesome](http://fortawesome.github.io/Font-Awesome/)

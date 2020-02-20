@@ -6,12 +6,16 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - python
   - r
 
-toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
-  - <a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a>
+# toc_footers:
+#   - <a href='#'>Sign Up for a Developer Key</a>
+#   - <a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a>
 
 includes:
-  - errors
+  - van_data
+  - census_data
+  - fec_data
+  - state_voter_file
+  - state_shapefiles
 
 search: true
 ---
@@ -24,7 +28,7 @@ We have language bindings in R and Python! You can view code examples in the dar
 
 This example API documentation page was created with [Slate](https://github.com/slatedocs/slate). Feel free to edit it and use it as a base for your own documentation.
 
-# Authentication
+# Tester Block -- Authentication
 
 > To authorize, use this code:
 
@@ -51,3 +55,4 @@ Kittn expects for the API key to be included in all API requests to the server i
 <aside class="notice">
 You must replace <code>meowmeowmeow</code> with your personal API key.
 </aside>
+
