@@ -28,7 +28,9 @@ vagrant up
 5. Open this new markdown file and edit the template or feel free to scrap it. There are links below in the readme that point you to markdown syntax pointers. 
 
 6. To include into the official page, go to 'index.html.md' and take the file name part without underscore and .md parts. Add this file name under the 'includes:' section. 
-example: 
+
+
+For example, if you want to add the _template.md file's contents: 
 ```shell
 includes:
   - template
